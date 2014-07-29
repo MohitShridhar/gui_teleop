@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <sstream>
 
 #include <QPainter>
 #include <QLineEdit>
@@ -166,7 +167,10 @@ namespace sesto_rviz_plugins
       max_linear_vel = DEFAULT_MAX_LINEAR_VEL;
     }
 
-    max_linear_vel_editor_->setText(QString::fromStdString(std::to_string(max_linear_vel)));
+    std::ostringstream temp;
+    temp << max_linear_vel;
+
+    max_linear_vel_editor_->setText(QString::fromStdString(temp.str().c_str()));
 
     if (config.mapGetString("MaxAngVel", &initMaxAngVel)) {
       max_angular_vel = initMaxAngVel.toFloat();  
@@ -174,9 +178,11 @@ namespace sesto_rviz_plugins
       max_angular_vel = DEFAULT_MAX_ANGULAR_VEL;
     }
 
-    max_angular_vel_editor_->setText(QString::fromStdString(std::to_string(max_angular_vel)));
+    temp << max_linear_vel;
 
-  }
+    max_angular_vel_editor_->setText(QString::fromStdString(temp.str().c_str()));
+
+  } 
 
 } 
 
