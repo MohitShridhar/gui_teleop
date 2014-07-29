@@ -168,7 +168,7 @@ namespace sesto_rviz_plugins
 
     max_linear_vel_editor_->setText(QString::fromStdString(std::to_string(max_linear_vel)));
 
-    if (config.mapGetString("MaxAngVel", &initMaxAngVel)) {
+    if (config.mapGetString("MaxAng", &initMaxAngVel)) {
       max_angular_vel = initMaxAngVel.toFloat();  
     } else {
       max_angular_vel = DEFAULT_MAX_ANGULAR_VEL;
