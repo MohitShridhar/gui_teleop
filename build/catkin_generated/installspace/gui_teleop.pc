@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: gui_teleop
+Description: Description of gui_teleop
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

@@ -1,0 +1,9 @@
+<library path="build/devel/lib/libgui_teleop">
+  <class name="sesto_rviz_plugins/GuiTeleop"
+         type="sesto_rviz_plugins::GuiTeleop"
+         base_class_type="rviz::Panel">
+    <description>
+      Gui Teleoperation plugin for bots
+    </description>
+  </class>
+</library>

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "gui_teleop")
+set(gui_teleop_MAINTAINER "MohitSridhar <MohitSridhar@todo.todo>")
+set(gui_teleop_DEPRECATED "")
+set(gui_teleop_VERSION "0.0.0")
+set(gui_teleop_BUILD_DEPENDS "nodelet" "roscpp" "rospy" "rviz" "sensor_msgs" "std_msgs" "tf")
+set(gui_teleop_RUN_DEPENDS "nodelet" "roscpp" "rospy" "rviz" "sensor_msgs" "std_msgs" "tf")
+set(gui_teleop_BUILDTOOL_DEPENDS "catkin")

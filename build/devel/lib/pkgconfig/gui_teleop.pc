@@ -1,0 +1,8 @@
+prefix=/Users/MohitSridhar/ros_pkgs/src/gui_teleop/build/devel
+
+Name: gui_teleop
+Description: Description of gui_teleop
+Version: 0.0.0
+Cflags: 
+Libs: -L/Users/MohitSridhar/ros_pkgs/src/gui_teleop/build/devel/lib 
+Requires: 
