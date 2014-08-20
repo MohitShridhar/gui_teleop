@@ -23,9 +23,6 @@ namespace sesto_rviz_plugins
     , angular_velocity_( 0 )
   {
 
-    // max_linear_vel = DEFAULT_MAX_LINEAR_VEL;
-    // max_angular_vel = DEFAULT_MAX_ANGULAR_VEL;
-
     QHBoxLayout* topic_layout = new QHBoxLayout;
 
     topic_layout->addWidget( new QLabel( "Output Topic:" ));
@@ -144,7 +141,7 @@ namespace sesto_rviz_plugins
   void GuiTeleop::save( rviz::Config config ) const
   {
     rviz::Panel::save( config );
-    config.mapSetValue( "Topic", output_topic_ );
+    config.mapSetValue("Topic", output_topic_ );
     config.mapSetValue("MaxLinVel", max_linear_vel);
     config.mapSetValue("MaxAngVel", max_angular_vel);
   }
